@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Nos Encontre</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/bootstrap.min.css"/>
+	
+	<!-- CSS -->
+
+	<style type="text/css">
+
+
+		.body {
+			width: 100%;
+			height: 100%;
+		}
+		/* Título */
+		.h1 {
+			margin-top: 10px;
+			text-align: center;
+			font-family: 'Lato';
+		}
+		/*--------- CORPO -------------*/
+		.titulo {
+			text-align: center;
+		}
+		/*--------- MENU --------------*/
+		/* Class para caracteristicas do Menu */
+		.divMenu {
+			height: 80px;
+			background-color: #4e8b40;
+		}
+		/* Class para botões do Menu */
+		.btnMenu {
+			border-color: #fff;
+			color: #fff;
+			font-family: 'Lato';
+			height: 30px;
+		}
+		/* Caracteristicas da logo no menu */
+		.menuImg {
+			margin-top: 15px;
+			width: 100px;
+			height: 55px;
+		}
+		.margin-top-menu{
+			margin-top: 25px;
+		}
+		/* Formulário de Cadastro */
+		.form{
+			text-align: center;
+			height: 900px;
+		}
+		/* Botão */
+		.btnLogin {
+			width: 100px;
+			margin-top: 30px;
+			background-color: #f7c25b;
+			
+		}
+		.divCadastro{
+			height: 1000px;
+		}
+		.rowTitulo{
+			height: 100px;
+		}
+		/*----------- RODAPE -----------*/
+		.rodapeImg {
+			margin-top: 20px;
+			width: 100px;
+			height: 60px;	
+		}
+		.rodape {
+			height: 100px;
+			background-color: #f7c25b;
+		}
+		.space {
+			height: 90px;
+			background-color: #fff;
+		}
+	</style>	
+</head>
+
+<body class="body">
+	<div class="container-fluid">
+		<!-- Div do menu -->
+		<div class="row divMenu">
+			<div class="col-6 d-flex justify-content-start margin-top-menu">
+				<a class="btn btn-outline-dark btnMenu" href="home.html">Home</a>&nbsp;&nbsp;
+				<a class="btn btn-outline-dark btnMenu" href="sobre.html">Sobre</a>&nbsp;&nbsp;
+				<a class="btn btn-outline-dark btnMenu" href="contato.html">Contato</a>
+			</div>
+			<div class="col-6 d-flex justify-content-end align-middle">
+				<img class="menuImg" src="img/logo.png">
+			</div>
+		</div>
+		<div class="row space"></div>
+		
+
+		<!-- Formulário -->
+		<div class="row">
+			<div class="col-1 divCadastro"></div>
+				<div class="col-10">
+					<div class="row d-flex justify-content-center rowTitulo"><h1>Cadastro de Usuário</h1></div>
+					<div class="row d-flex justify-content-center form">
+						<form action="/users" method="post">
+						  <div class="form-group">
+						    <label for="name">Nome Completo:</label>
+						    <input name="name" type="text" class="form-control titulo" required id="name" placeholder="Seu nome">
+						  </div>
+						  <div class="form-group">
+						    <label for="email">Email:</label>
+    						<input name="email" type="email" class="form-control titulo" required id="email" aria-describedby="emailHelp" placeholder="nome@exemplo.com">
+						  </div>
+						  <div class="form-group">
+						    <label for="tel">Telefone:</label>
+						    <input name="tel" type="text" class="form-control titulo" required id="tel" placeholder="(00) 00000-0000">
+						  </div>
+						  <div class="form-group">
+						    <label for="street">Endereço:</label>
+						    <input name="street" type="text" class="form-control titulo" required id="street">
+						  </div>
+						  <div class="form-group">
+						    <label for="zip">CEP:</label>
+						    <input name="zip" type="text" class="form-control titulo" required id="zip" placeholder="00000-000">
+						  </div>
+						  <div class="form-group">
+						    <label for="city">Região Administrativa</label>
+						    <select name="city" class="form-control" required id="city">
+							    <option>Águas Claras</option>
+								<option>Brazlândia</option>
+								<option>Candangolândia</option>
+								<option>Ceilândia</option>
+								<option>Cruzeiro</option>
+								<option>Fercal</option>
+								<option>Gama</option>
+								<option>Guará</option>
+								<option>Itapoã</option>
+								<option>Jardim Botânico</option>
+								<option>Lago Norte</option>
+								<option>Lago Sul</option>
+								<option>Núcleo Bandeirante</option>
+								<option>Paranoá</option>
+								<option>Park Way</option>
+								<option>Planaltina</option>
+								<option>Plano Piloto</option>
+								<option>Recanto das Emas</option>
+								<option>Richo Fundo I</option>
+								<option>Richo Fundo II</option>
+								<option>Samambaia</option>
+								<option>Santa Maria</option>
+								<option>São Sebastião</option>
+								<option>SCIA / Estrutural</option>
+								<option>SIA</option>
+								<option>Sobradinho I</option>
+								<option>Sobradinho II</option>
+								<option>Sudoeste / Octagonal</option>
+								<option>Taguatinga</option>
+								<option>Varjão</option>
+								<option>Vicente Pires</option>
+						    </select>
+						  </div>
+						  <div class="row">
+							    <div class="col">
+							      <label for="password">Senha:</label>
+							      <input name="password" type="password" class="form-control titulo" required id="password" placeholder="Senha">
+							    </div>
+							    <div class="col">
+							      <label for="confirm_password">Confirmar Senha:</label>
+							      <input type="password" class="form-control titulo" required id="confirm_password" placeholder="Senha">
+							    </div>
+						    </div>
+						    <br><br>
+						    <span>Tipo de Usuário</span><br>
+							<div class="form-check-inline"  style="margin-top: 30px">
+								<input class="form-check-input" type="radio" name="isConsumer" id="produtor" value="false">
+								<label class="form-check-label" for="produtor">Produtor </label>
+							</div>
+							<div class="form-check-inline">
+								<input class="form-check-input" type="radio" name="isConsumer" id="consumidor" value="true">
+								<label class="form-check-label" for="consumidor">Consumidor </label>
+							</div>
+						  <div class="form-group form-check" style="margin-top: 60px;">
+						    <input type="checkbox" class="form-check-input" required id="concordo">
+						    <label class="form-check-label" for="concordo">Li e concordo com os termos de segurança</label>
+						  </div>
+						  <button type="submit" class="btn btn-secondary" id="enviar">Enviar</button>
+						</form>
+					</div>
+				</div>
+			<div class="col-1"></div>
+		</div>
+		<!-- Div espaço -->
+		<div class="row space"></div>
+		<!-- Div rodape -->
+		<div class="row rodape">
+			<div class="d-flex justify-content-start"><img class="rodapeImg" src="img/logo-verde.png"></div>
+		</div>
+	
+			<script>
+				var password = document.getElementById("password"), confirm_password = document.getElementById("confirm_password");
+
+				function validatePassword(){
+					if(password.value != confirm_password.value) {
+						confirm_password.setCustomValidity("As senhas não estão iguais.");
+					} else {
+						confirm_password.setCustomValidity('');
+					}
+				}
+
+				password.onchange = validatePassword;
+				confirm_password.onkeyup = validatePassword;
+			</script>
+
+
+			<footer>
+				<script src="public/js/bootstrap.min.js"></script>
+				<script src="public/js/jquery.min.js"></script>
+			</footer>
+	</div>
+</body>
+</html>

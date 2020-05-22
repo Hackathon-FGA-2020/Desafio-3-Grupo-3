@@ -1,0 +1,15 @@
+
+* {
+	margin: 0px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.menu {
+	width: 100%;
+	right: 70px;
+	background-color: #4e8b40;
+}
