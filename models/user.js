@@ -62,7 +62,6 @@ export const createUser = async (userData) => {
   };
 
   let user = new User(newUser);
-  console.log(userData);
 
   if (user.isConsumer === false) {
     let producer = await new Producer({});
