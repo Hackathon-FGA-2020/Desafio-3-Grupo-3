@@ -1,0 +1,16 @@
+{
+    "producer": "user._id",
+    "product": "product._id",
+    "available": "true",
+    "qty": 40
+
+    ,"comentario" : "
+    ! NAO COLOQUE ESSE COMENTARIO NA REQUISICAO !
+    
+    O campo 'producer' recebe o id de USUARIO (nao recebe o id do produtor,
+    mas id do USUARIO!!) do produtor.
+    O campo 'product' recebe o id do produto.
+    O campo 'available' diz se o produto esta disponivel(true) ou nao(false).
+    O campo 'qty' recebe a quantidade do produto. Eh um campo opcional.
+    "
+}

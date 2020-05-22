@@ -1,0 +1,10 @@
+{
+    "id": "id_do_pedido_a_modificar",
+    "propriedade" : "novo valor",
+
+    "comentario" : "
+    ! NAO COLOQUE ESSE COMENTARIO NA REQUISICAO !
+
+    A propriedade deve ser uma daquelas descritas no exemplo order_new.json
+    "
+}

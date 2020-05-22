@@ -1,0 +1,22 @@
+{
+    "name": "joao da silva",
+    "email": "joaosilva@gmail.com",
+    "tel": "6191234-1234",
+    "password": "b7e94be513e9c",
+    "address": {
+        "street": "rua dos parsa",
+        "city": "SOBRADINHO",
+        "zip": "71000-000"
+    },
+    "isConsumer": "true"
+
+    ,"comentario": "
+    ! NAO COLOQUE ESSE COMENTARIO NA REQUISICAO !
+    
+    Se o usuario for um produtor, ja sera automaticamente atribuido a ele
+    um id de produtor, e sera adicionado ao banco de produtores.
+
+    Quando eh criado um usuario, eh associado a ele um id gerado automaticamente
+    pelo banco de dados.  O servidor retorna o id do usuario.
+    "
+}
