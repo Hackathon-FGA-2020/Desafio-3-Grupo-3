@@ -1,0 +1,13 @@
+{
+    "id": "id_da_oferta_a_modificar",
+    "propriedade": "novo_valor"
+    
+    ,"comentario": "
+    ! NAO COLOQUE ESSE COMENTARIO NA REQUISICAO !
+
+    O campo 'id' recebe o id da oferta retornado pelo servidor depois de
+    ter sido feita uma requisicao de criar oferta.
+    O campo 'propriedade' deve ser uma propriedade descrita no exemplo
+    productoffer_new.json.
+    "
+}

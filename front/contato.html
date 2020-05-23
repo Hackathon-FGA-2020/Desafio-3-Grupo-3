@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nos Encontre</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/bootstrap.min.css"/>
+	
+	<!-- CSS -->
+
+	<style type="text/css">
+
+		/*--------- MENU --------------*/
+		/* Class para caracteristicas do Menu */
+		.divMenu {
+			height: 80px;
+			background-color: #4e8b40;
+		}
+		/* Class para botões do Menu */
+		.btnMenu {
+			border-color: #fff;
+			color: #fff;
+			font-family: 'Lato';
+			height: 30px;
+		}
+		/* Caracteristicas da logo no menu */
+		.menuImg {
+			margin-top: 15px;
+			width: 100px;
+			height: 55px;
+		}
+		.margin-top-menu{
+			margin-top: 25px;
+		}
+		
+		/*----------- LOGIN ------------*/
+		/* Class para caracteristicas do botão de login */
+		.btnLogin {
+			width: 100px;
+			margin-top: 30px;
+			background-color: #f7c25b;
+		}
+		/* Class para caracteristicas dos textos de login */
+		.txtLogin {
+			color: #fff;
+		}
+		.divLogin {
+			width: 410px;
+			height: 500px;
+			border-radius: 15px;
+			margin-top: 90px;
+			background-color: #4e8b40;
+		}
+		.boxTxt {
+			width: 250px;
+			border-radius: 10px;
+		}
+		.margin-top {
+			margin-top: 80px;
+		}
+		
+		/*------------ INFO -------------*/
+		/* Class para caracteristicas do texto do título */
+		.txtTitle {
+			margin-top: 100px;
+		}
+		/* Class para caracteristicas do texto do parágrafo */
+		.txtParagrafo {
+			margin-top: 50px;
+			font-size: 24px;
+			text-align: center;
+		}
+		/* Class para caracteristicas dos significado das imagens */
+		.txtComunicacao {
+			margin-left: 0px;
+			text-align: center;
+		}
+		.txtLocalizacao {
+			margin-left: 0px;
+			text-align: center;
+		}
+		.txtVisibilidade {
+			margin-left: 0px;
+			text-align: center;
+		}		
+		/* Class para caracteristicas das imagens do parágrafo */
+		.img{
+			width: 45%;
+		}
+		/* --------------Texto----------- */
+		/* Class para caracteristicas do texto do título */
+		.txtTitle {
+			margin-top: 100px;
+			text-align: center;
+		}
+		/* Class para caracteristicas do texto do parágrafo */
+		.txtParagrafo {
+			font-size: 24px;
+			text-align: center;
+		}
+		/*------ Forms Contato ------*/
+
+		.contact-form{
+			display: flex;
+			max-width: 550px;
+			margin: 0 auto;
+			background: rgba(0,0,0,0.8);
+			background-color: #4e8b40;
+			padding: 30px;
+			border-radius: 15px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+		.input-fields{
+			display: flex;
+			flex-direction: column;
+			margin-right: 4%;
+		}
+		.input-fields,
+		.msg{
+			width: 48%;
+		}
+		.btnEnviar {			
+			border-color: #fff;
+			color: #fff;
+			background-color: #f7c25b;
+			font-family: 'Lato';
+			text-align: center;
+			cursor: pointer;
+		}
+		.input-fields .input,
+		.msg textarea{
+			margin: 10px 0;
+			border: 0px;
+			border-radius: 15px;
+			border-bottom: 2px solid #fff;
+			padding: 10px;
+			width: 100%;
+		}
+		
+		/*----------- RODAPE -----------*/
+		.rodapeImg {
+			margin-top: 20px;
+			width: 100px;
+			height: 60px;	
+		}
+		.rodape {
+			height: 100px;
+			background-color: #f7c25b;
+		}
+		.space {
+			height: 90px;
+			background-color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Div do menu -->
+	<div class="container-fluid">
+		<div class="row divMenu">
+			<div class="col-6 d-flex justify-content-start margin-top-menu">
+				<a class="btn btn-outline-dark btnMenu" href="index.html">Início</a>&nbsp;&nbsp;
+				<a class="btn btn-outline-dark btnMenu" href="sobre.html">Sobre</a>&nbsp;&nbsp;
+				<a class="btn btn-outline-dark btnMenu" href="contato.html">Contato</a>
+			</div>
+			<div class="col-6 d-flex justify-content-end align-middle">
+				<img class="menuImg" src="img/logo.png">
+			</div>
+		</div>
+			<!-- Div linha do corpo principal -->
+		<div class="row">
+			<!-- Div coluna para informações -->
+			<div class="col-xl-12" class="d-flex justify-content-center">
+				<!-- Div do título-->
+				<div>
+					<h2 class="txtTitle">Fale Conosco!</h2>
+				</div>
+				<!-- Div do parágrafo -->
+				<div class="txtParagrafo">
+					<p>Sua sugestao e sempre bem vinda.</p>
+				</div>
+			</div>
+		</div>
+			<!--Contato -->
+		<div class="row">
+			<div class="contact-form" style="margin-top: 50px">
+			    <div class="input-fields">
+					<input type="text" class="input" placeholder="Nome" id="nome">
+					<input type="text" class="input" placeholder="Email" id="email">
+					<input type="text" class="input" placeholder="Assunto" id="assunto">
+			    </div>
+			    <div class="msg">
+					<textarea placeholder="Mensagem"></textarea>	
+					<div class = "d-flex justify-content-center">			
+						<button type="submit" class="btn btn-secondary btnEnviar">Enviar</button>
+					</div>	    
+			    </div>
+			</div>
+		</div>
+		<!-- Div espaço -->
+		<div class="row space"></div>
+		<!-- Div rodape -->
+		<div class="row rodape">
+			<div class="d-flex justify-content-start"><img class="rodapeImg" src="img/logo-verde.png"></div>
+		</div>
+		<footer>
+			<script src="public/js/bootstrap.min.js"></script>
+			<script src="public/js/jquery.min.js"></script>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "products": [
+        {"productOffer": "5ec5d0ae0b97b716c83ae37e", "qty": 3}
+    ],
+    "buyer": "5ec58b016c0222091483907d",
+    "order_location": "GAMA",
+    "order_status": "INICIADA",
+    "comments": "so kero as alfaces mais style"
+    
+    ,"comentario" : "
+    ! NAO COLOQUE ESSE COMENTARIO NA REQUISICAO !
+
+    O pedido eh composto por um array de {id_do_produto:quantidade},
+    junto com o id do comprador, localizacao da compra, status da compra
+    e comentarios que o comprador possa ter para o vendedor.
+
+    Quando uma requisicao de pedido for feita seguindo o modelo
+    desse JSON, o servidor retorna o _id do pedido.
+    "
+}
+
+    
