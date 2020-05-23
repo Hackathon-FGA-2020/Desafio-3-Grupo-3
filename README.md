@@ -14,3 +14,6 @@ Em função do tempo e equipe reduzida alguns aspectos da plataforma não foram 
 Integração: as telas e códigos (front e back-end) ainda precisam de uma integração para receber as respostas do servidor;
 Filtro: a função de filtro não implementada e portanto a plataforma ainda não faz o match mencionado;
 Carrinho / lista de compra: a plataforma ainda não permite que o cliente peça mais de um produto por vez, pois essa função ainda não foi finalizada.
+
+__VIDEO__
+https://drive.google.com/file/d/1pHRMkjvVNFE8_su1FmoHZXjUVZVDsqUx/view?usp=sharing
