@@ -5,6 +5,7 @@ import User, { createUser } from "../models/user.js";
 
 const router = express.Router();
 
+
 router.post("/", async (req, res) => {  // Criar novo usuario
   if (req.body) {
     await createUser(req.body)
@@ -23,18 +24,35 @@ router.post("/", async (req, res) => {  // Criar novo usuario
   }
 });
 
-router.get("/", (req, res) => {   // Resgatar um usuario a partir do userId 
-  if (!req.body.userId) {
-    res.status(422).json({ error: "Inform the userId key" });
+router.post("/get", (req, res) => {   // Resgatar um usuario a partir do userId ou email
+  if(req.body.hasOwnProperty('_id')) {
+    User.findById(req.body.userId, (err, doc) => {
+      if (err) {
+        console.log("Error when fetching user  " + err);
+        return res.status(422).json({ error: err.message });
+      } else {
+        console.log("Succesfully fetched user");
+        return res.json(doc);
+      }
+    });
+  } else if(req.body.hasOwnProperty('email')) {
+    User.findOne({ email: req.body.email }, (err, doc) => {
+      if (err) {
+        console.log("Error when fetching user  " + err);
+        return res.status(422).json({ error: err.message });
+      } else if(doc == null) {
+        console.log("User not found");
+        return res.status(422).json({ error: "user not found"});
+      } else {
+        console.log("Succesfully fetched user  " + doc);
+        return res.json(doc);
+      }
+    });
+  } else {
+    console.log("No email or id supplied");
+    return res.status(422).json();
   }
-
-  User.findById(req.body.userId, (err, doc) => {
-    if (err) {
-      res.status(422).json({ error: err.message });
-    } else {
-      res.json(doc);
-    }
-  });
 });
 
 export default router;
+
