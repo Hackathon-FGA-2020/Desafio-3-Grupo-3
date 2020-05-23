@@ -6,11 +6,4 @@
         "macaxeira",
         "macacheira"
     ]
-
-    ,"comentario" : "
-    ! NAO COLOQUE ESSE COMENTARIO NA REQUISICAO !
-    
-    O campo synonyms recebe um array de Strings que contem nomes sinonimos
-    para o produto.
-    "
 }

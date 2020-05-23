@@ -4,7 +4,8 @@
   "description": "Servidor em Express JS para o aplicativo criado pelo Grupo 3 para o Desafio 3 do hackathon",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --exec babel-node app.js",
+    "dev": "nodemon --exec babel-node app.js",
+    "start": "babel-node app.js",
     "debug-start": "DEBUG=express:* nodemon --exec babel-node --experimental-modules app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
