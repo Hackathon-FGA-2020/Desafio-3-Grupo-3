@@ -2,11 +2,14 @@ import "dotenv/config.js";
 import express from "express";
 import routes from "./routes/index.js";
 import path from 'path';
+import cookieParser from "cookie-parser";
+
 import models, { connectDb } from "./models/index.js";
 
-const app = express();
 const PORT = process.env.PORT || 3000;
+const app = express();
 
+app.use(cookieParser(process.env.SESSION_SECRET));
 app.use(express.json());
 app.use(express.urlencoded());
 
@@ -26,6 +29,7 @@ app.use("/session", routes.session);
 app.use("/product", routes.product);
 app.use("/productoffer", routes.productoffer);
 app.use("/order", routes.order);
+app.use("/login", routes.login);
 
 connectDb()
   .then(async () => {
