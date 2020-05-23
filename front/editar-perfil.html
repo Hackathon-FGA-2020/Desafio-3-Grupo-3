@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nos Encontre</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/bootstrap.min.css"/>
+	
+	<!-- CSS -->
+
+	<style type="text/css">
+
+		/*--------- MENU --------------*/
+		/* Class para caracteristicas do Menu */
+		.divMenu {
+			height: 80px;
+			background-color: #4e8b40;
+		}
+		/* Class para botões do Menu */
+		.btnMenu {
+			border-color: #fff;
+			color: #fff;
+			font-family: 'Lato';
+			height: 30px;
+		}
+		/* Caracteristicas da logo no menu */
+		.menuImg {
+			margin-top: 15px;
+			width: 100px;
+			height: 55px;
+		}
+		.margin-top-menu{
+			margin-top: 25px;
+		}
+		
+		/*------------ INFO -------------*/
+		/* Class para caracteristicas do texto do título */
+		.txtTitle {
+			margin-top: 100px;
+		}
+		/* Class para caracteristicas do texto do parágrafo */
+		.txtParagrafo {
+			margin-top: 50px;
+			font-size: 24px;
+			text-align: center;
+		}
+		/* Class para caracteristicas dos significado das imagens */
+		.txtComunicacao {
+			margin-left: 0px;
+			text-align: center;
+		}
+		.txtLocalizacao {
+			margin-left: 0px;
+			text-align: center;
+		}
+		.txtVisibilidade {
+			margin-left: 0px;
+			text-align: center;
+		}		
+		/* Class para caracteristicas das imagens do parágrafo */
+		.img{
+			width: 180px;
+			height: 100px;
+		}
+		
+		
+		/*----------- RODAPE -----------*/
+		.rodapeImg {
+			margin-top: 20px;
+			width: 100px;
+			height: 60px;	
+		}
+		.rodape {
+			height: 100px;
+			background-color: #f7c25b;
+		}
+		.space {
+			height: 90px;
+			background-color: #fff;
+		}
+		/*----------- PERFIL ------------*/
+
+		.imgPerfil{
+			width: 120px;
+			height: 120px;
+		}
+		.divBio{
+			width: 800px;
+		}
+		.tamanhoCon{
+			width: 90%;
+			height: 200px;
+		}
+		.btnEnviar{
+			width: 100px;
+			margin-top: 30px;
+			background-color: #4e8b40;
+		}
+		/*----------- CARDS -----------*/
+		.cards {
+			text-align: center;
+			width: 250px;
+			height: 450px;
+			background-color: #dfdfdf;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Div do menu -->
+	<div class="container-fluid">
+		<div class="row divMenu">
+			<div class="col-6 d-flex justify-content-start margin-top-menu">
+				<a class="btn btn-outline-dark btnMenu" href="perfil-do-produtor.html">Salvar Perfil</a>&nbsp;&nbsp;
+				<a class="btn btn-outline-dark btnMenu" href="perfil-do-produtor.html">Cancelar</a>
+			</div>
+			<div class="col-6 d-flex justify-content-end align-middle">
+				<img class="menuImg" src="img/logo.png">
+			</div>
+		</div>
+		<div class="row space"></div>
+		<div class="container justify-content-center" style="background-color: #f7c25b; border-radius: 10px">
+			<div class="row tamanhoCon">
+				<div style="height: 120px; margin-top: 40px; margin-left: 130px">	
+				<ul class="list-unstyled">
+				  <li class="media">
+				    <img src="img/perfil.jpg"  style="border: 3px solid #4e8b40; border-radius: 10px" class="mr-3 imgPerfil">
+				    <div class="media-body">
+				      <div class="form-group">
+				      	<h5 class="mt-0 mb-1">João Paulo</h5>
+				      	<form>
+						    <textarea style="width: 700px" class="form-control" id="bio" rows="3" placeholder="Sua nova biografia"></textarea>
+						</form>
+				      </div>
+				    </div>
+				    <button style="margin-left: 20px" type="submit" class="btn btn-secondary btnEnviar">Enviar</button>
+				  </li>
+				</ul>
+			</div>
+			</div>					
+		</div>
+		<div class="container">
+			<div class="row">
+				<!-- Div Cards -->
+				<div class="col-12">
+					<h4 style="margin-top: 35px">Editar Meus Itens</h4><br>	
+					<div class="row d-flex justify-content-around">
+						<div class="card cards margin-top-menu">
+							<div class="card-body">
+								<h5 class="card-title">Ovos</h5>
+								<img class="img" src="img/ovos.jpg">
+								<form>
+								    <textarea style="width: 200px; margin-top: 20px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Sua nova descrição"></textarea>
+								</form><br>
+								<form>
+								    <textarea style="width: 200px;height: 40px; margin-top: 0px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Preço"></textarea>
+								</form><br>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Enviar</button>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Excluir</button>
+							</div>	
+						</div>
+						<div class="card cards margin-top-menu">
+							<div class="card-body">
+								<h5 class="card-title">Carne</h5>
+								<img class="img" src="img/carne.jpg" width=70%>
+								<form>
+								    <textarea style="width: 200px; margin-top: 20px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Sua nova descrição"></textarea>
+								</form><br>
+								<form>
+								    <textarea style="width: 200px;height: 40px; margin-top: 0px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Preço"></textarea>
+								</form><br>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Enviar</button>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Excluir</button>
+							</div>	
+						</div>
+						<div class="card cards margin-top-menu">
+							<div class="card-body">
+								<h5 class="card-title">Maçã</h5>
+								<img class="img" src="img/maça.jpg" width=60%>
+								<form>
+								    <textarea style="width: 200px; margin-top: 20px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Sua nova descrição"></textarea>
+								</form><br>
+								<form>
+								    <textarea style="width: 200px;height: 40px; margin-top: 0px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Preço"></textarea>
+								</form><br>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Enviar</button>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Excluir</button>
+							</div>	
+						</div>
+						<div class="card cards margin-top-menu">
+							<div class="card-body">
+								<h5 class="card-title">Banana</h5>
+								<img class="img" src="img/banana.jpg" width=70%>
+								<form>
+								    <textarea style="width: 200px; margin-top: 20px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Sua nova descrição"></textarea>
+								</form><br>
+								<form>
+								    <textarea style="width: 200px;height: 40px; margin-top: 0px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Preço"></textarea>
+								</form><br>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Enviar</button>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Excluir</button>
+							</div>	
+						</div>
+						<div class="card cards margin-top-menu">
+							<div class="card-body">
+								<h5 class="card-title">Tomate</h5>
+								<img class="img" src="img/tomate.jpg" width=70%>
+								<form>
+								    <textarea style="width: 200px; margin-top: 20px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Sua nova descrição"></textarea>
+								</form><br>
+								<form>
+								    <textarea style="width: 200px;height: 40px; margin-top: 0px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Preço"></textarea>
+								</form><br>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Enviar</button>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Excluir</button>
+							</div>	
+						</div>
+						<div class="card cards margin-top-menu">
+							<div class="card-body">
+								<h5 class="card-title">Aveia</h5>
+								<img class="img" src="img/aveia.jpg" width=70%>
+								<form>
+								    <textarea style="width: 200px; margin-top: 20px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Sua nova descrição"></textarea>
+								</form><br>
+								<form>
+								    <textarea style="width: 200px;height: 40px; margin-top: 0px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Preço"></textarea>
+								</form><br>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Enviar</button>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Excluir</button>
+							</div>	
+						</div>
+						<div class="card cards margin-top-menu">
+							<div class="card-body">
+								<h5 class="card-title">Alface</h5>
+								<img class="img" src="img/alface.jpg" width=70%>
+								<form>
+								    <textarea style="width: 200px; margin-top: 20px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Sua nova descrição"></textarea>
+								</form><br>
+								<form>
+								    <textarea style="width: 200px;height: 40px; margin-top: 0px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Preço"></textarea>
+								</form><br>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Enviar</button>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Excluir</button>
+							</div>	
+						</div>
+						<div class="card cards margin-top-menu">
+							<div class="card-body">
+								<h5 class="card-title">Frango</h5>
+								<img class="img" src="img/frango.jpg" width=70%>
+								<form>
+								    <textarea style="width: 200px; margin-top: 20px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Sua nova descrição"></textarea>
+								</form><br>
+								<form>
+								    <textarea style="width: 200px;height: 40px; margin-top: 0px; margin-left: 5px" class="form-control" id="descricao" rows="3" placeholder="Preço"></textarea>
+								</form><br>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Enviar</button>
+								<button style="margin-left: 0px" type="submit" class="btn btn-secondary btnEnviar">Excluir</button>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		
+
+
+
+	<!-- Div espaço -->
+	<div class="row space"></div>
+	<!-- Div rodape -->
+	<div class="row rodape">
+		<div class="d-flex justify-content-start"><img class="rodapeImg" src="img/logo-verde.png"></div>
+	</div>
+	<footer>
+		<script src="public/js/bootstrap.min.js"></script>
+		<script src="public/js/jquery.min.js"></script>
+	</footer>
+	</div>
+</body>
+</html>
