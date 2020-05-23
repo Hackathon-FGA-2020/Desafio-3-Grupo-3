@@ -1,5 +1,8 @@
 import mongoose from "mongoose";
+import bcrypt from "bcryptjs";
+
 import Producer from "./producer.js";
+
 const userSchema = new mongoose.Schema(
   {
     name: {
@@ -18,6 +21,7 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
+      select: false
     },
     address: {
       street: {
@@ -48,10 +52,12 @@ const User = mongoose.model("User", userSchema);
 export default User;
 
 export const createUser = async (userData) => {
+  let password = await bcrypt.hash(userData.password, 10);
+
   const newUser = {
     name: userData.name,
     email: userData.email,
-    password: userData.password,
+    password,
     tel: userData.tel,
     address: {
       street: userData.street,
@@ -62,6 +68,7 @@ export const createUser = async (userData) => {
   };
 
   let user = new User(newUser);
+  console.log(userData);
 
   if (user.isConsumer === false) {
     let producer = await new Producer({});

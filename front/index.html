@@ -166,18 +166,18 @@
 					<!-- Formulário de entrada -->
 					<div class="col-2"></div>
 					<div class="col-8 d-flex justify-content-center">
-						<form id="loginform" class="form-group">
+						<form class="form-group">
 						    <!-- Formulário email -->
 						    <div class="margin-top">
 						    <label for="email" class="txtLogin">Email</label>
-						    <input name="email" type="email" class="form-control boxTxt" id="email" aria-describedby="emailHelp">
+						    <input type="email" class="form-control boxTxt" id="email" aria-describedby="emailHelp">
 						    <!-- Formulário senha -->
 						    <label for="senha" class="txtLogin">Senha</label>
-						    <input name="password" type="password" class="form-control boxTxt" id="senha">
+						    <input type="password" class="form-control boxTxt" id="senha">
 							</div>
 							<!-- Botão para entrar -->
 							<div class="d-flex justify-content-center">
-								<button type="button" onclick="onSend()" class="btn btn-secondary btnLogin">Entrar</button>
+								<button type="submit" class="btn btn-secondary btnLogin">Entrar</button>
 							</div>
 							<!-- Texto -->
 							<div class="d-flex justify-content-center">
@@ -201,21 +201,6 @@
 		<div class="d-flex justify-content-start"><img class="rodapeImg" src="img/logo-verde.png"></div>
 	</div>
 	<footer>
-		<script type="text/javascript">
-		function onSend() {
-			alert(jQuery('#loginform').serialize());
-			jQuery.post(
-				'/users/get',
-				jQuery('#loginform').serialize(),
-				(data, status) => {
-					if(status == "success") {
-						window.location.replace("area-do-consumidor.html");
-					}
-				}
-			);
-		}
-		
-		</script>
 		<script src="public/js/bootstrap.min.js"></script>
 		<script src="public/js/jquery.min.js"></script>
 	</footer>

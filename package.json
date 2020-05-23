@@ -4,7 +4,7 @@
   "description": "Servidor em Express JS para o aplicativo criado pelo Grupo 3 para o Desafio 3 do hackathon",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node app.js",
+    "dev": "nodemon --inspect --exec babel-node app.js",
     "start": "babel-node app.js",
     "debug-start": "DEBUG=express:* nodemon --exec babel-node --experimental-modules app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,8 +27,11 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "uuid": "^8.0.0"
   }
 }

@@ -4,12 +4,14 @@ import producers from './producers.js';
 import product from './product.js';
 import productoffer from './productoffer.js';
 import order from './order.js';
+import login from './login.js';
 
 export default {
-    session,
-    users,
-    producers,
-    product,
-    productoffer,
-    order
+  session,
+  users,
+  producers,
+  product,
+  productoffer,
+  order,
+  login
 }

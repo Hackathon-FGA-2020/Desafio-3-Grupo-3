@@ -33,7 +33,7 @@ router.get('/', async function (req, res) {  // Encontrar o produto pelo nome ou
 
 });
 
-router.patch('/', (req, res) => { // Modificar dados de produto, a partir do nome ou do _id
+router.patch('/modify', (req, res) => { // Modificar dados de produto, a partir do nome ou do _id
     if(req.body.hasOwnProperty('_id')) {
         req.context.models.Product.update({ _id: req.body._id}, req.body, (err, matched) => {
             if(err) {

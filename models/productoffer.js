@@ -14,10 +14,6 @@ var ProductOfferSchema = new Schema ({
         required: true,
         unique: false 
     },
-    price: {
-        type: Number,
-        required:true
-    },
     available: {
         type: Boolean,
         required: true,
